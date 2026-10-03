@@ -14,8 +14,9 @@ let person = new Person("shanbel kibre", 22);
 
 console.log(person.name)
 
-let a = 24;
-let b = '2';
+let a: number = 24;
+let b: string = '2';
 
 console.log(a / (parseInt(b)));
+
 
