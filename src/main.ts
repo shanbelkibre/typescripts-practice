@@ -34,3 +34,15 @@ let arrayeither: string[] | number[];
 arrayeither = ["rex", "22"]
 
 
+// Type Narrowing
+
+
+function processId(id: string | number) {
+  if (typeof id === "string") {
+    console.log(id.toUpperCase());
+  } else {
+    console.log(id.toFixed(0));
+  }
+}
+
+
