@@ -21,3 +21,23 @@ function handlePropertyResult(result: PropertyResult) {
     console.log(result.message);
   }
 }
+
+//  this is  what we call  type narrowing
+
+interface Logger {
+  log(message: string): void;
+}
+
+interface PropertyRepository {
+  findById(id: number): string | null;
+}
+
+class PropertyService implements Logger, PropertyRepository {
+  log(message: string): void {
+    console.log(message);
+  }
+
+  findById(id: number): string | null {
+    return id === 1 ? "Modern House" : null;
+  }
+}
