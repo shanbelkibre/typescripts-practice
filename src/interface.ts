@@ -26,11 +26,14 @@ const house: House = {
 //  interface with method and class 
 
 interface PropertyService {
-  findById(id: number): Property | null;
+    findById(id: number): Property | null;
 }
 
 class PropertyManager implements PropertyService {
-  findById(id: number): Property | null {
-    return null;
-  }
+    findById(id: number): Property | null {
+        return null;
+    }
 }
+
+// implements	Make a class follow a contract
+// Multiple interfaces	Implement multiple contracts
