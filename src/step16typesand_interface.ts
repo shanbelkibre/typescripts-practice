@@ -1,15 +1,27 @@
 // Interface: commonly used for object contracts
 interface Property {
-  id: number;
-  title: string;
+    id: number;
+    title: string;
 }
 
 // Type: objects, unions, and more
 type PropertyStatus = "available" | "sold" | "rented";
 
 type PropertyWithStatus = {
-  id: number;
-  status: PropertyStatus;
+    id: number;
+    status: PropertyStatus;
 };
 
 
+// realworld use 
+
+interface User {
+    id: number;
+    name: string;
+}
+
+type UserRole = "admin" | "agent" | "owner";
+
+type AdminUser = User & {
+    role: UserRole;
+};
