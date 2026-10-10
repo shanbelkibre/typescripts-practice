@@ -20,12 +20,13 @@ class car extends vichels {
 
 }
 
-let mymotorbike = new car();
 
+//  you can possible acess all inhirted proparty and methods
+
+let mymotorbike = new car();
 mymotorbike.dirve();
 mymotorbike.brake();
-console.log(mymotorbike.mileage);
-console.log(mymotorbike.price);
+
 
 
 
