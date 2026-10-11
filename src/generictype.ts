@@ -15,3 +15,8 @@ const response: ApiResponse<Property> = {
     title: "House in Addis Ababa",
   },
 };
+
+
+function identity<Type>(arg: Type): Type {
+  return arg;
+}
